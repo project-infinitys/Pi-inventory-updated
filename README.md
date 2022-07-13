@@ -2,7 +2,9 @@
 Redesign of qb-inventory
 
 # Change-log
-Fixed Blinking Black Hover On Use Button And Slots
+- Fixed Blinking Black Hover On Use Button And Slots
+- Fixed Item Amount Show Size To View Better
+- Icreased Some Drag Speed
 
 # Preview
 
@@ -20,5 +22,5 @@ https://discord.gg/n4XH2pACGM
 
 # Credits
 
-Scorpion.#5940,  Gabbar Singh#5258 And Full Project India
+Scorpion.#5940,  Gabbar Singh#5258, Shanmukh ⁽ᴹᵘⁿⁿᵃ ᴰᵉᵛ⁾ ⚒#4848 And Full Project India
  
