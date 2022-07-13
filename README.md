@@ -1,7 +1,7 @@
 # PI-inventory
 Redesign of qb-inventory
 
-#change-log
+# change-log
 Fixed Blinking Black Hover On Use Button And Slots
 
 # Preview
