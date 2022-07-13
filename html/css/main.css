@@ -331,8 +331,8 @@ body {
 
 .item-slot-amount {
 	position: absolute;
-	top: 0.6vh;
-	right: 0.2vw;
+	top: 0.7vh;
+	right: 0.6vw;
 }
 
 .item-slot-amount>p {
