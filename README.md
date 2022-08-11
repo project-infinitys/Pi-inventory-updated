@@ -18,7 +18,7 @@ And Also Most Important Rename Pi-inventory to qb-inventory else some Scripts Th
 # Support
 We Only Give Support For Html Thing
 For Support Join Our Discord :-
-https://discord.gg/n4XH2pACGM
+https://discord.gg/y2h3NNxydu
 
 # Credits
 - For Whole Written Code Of Lua/html
