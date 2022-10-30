@@ -589,14 +589,13 @@ function handleDragDrop() {
         cancel: ".item-nodrag",
         start: function(event, ui) {
             IsDragging = true;
-            // $(this).find("img").css("filter", "brightness(50%)");
-            // $(".item-slot").css("border", "1px solid rgba(255, 255, 255, 0.1)");
+            $(this).find("img").css("filter", "brightness(50%)");
+            $(".item-slot").css("border", "1px solid rgba(255, 255, 255, 0.1)");
             var itemData = $(this).data("item");
             var dragAmount = $("#item-amount").val();
-            // if (!itemData.useable) {
-            //     $("#item-use").css("background", "transperent");
-            // }
-
+            if (!itemData.useable) {
+                $("#item-use").css("background", "rgba(35,35,35, 0.5");
+            }
 
             if (dragAmount == 0) {
                 if (itemData.price != null) {
@@ -692,14 +691,14 @@ function handleDragDrop() {
                 InventoryError($(this).parent(), $(this).attr("data-slot"));
             }
         },
-        // stop: function() {
-        //     setTimeout(function() {
-        //         IsDragging = false;
-        //     }, 300);
-        //     $(this).css("background", "rgba(0, 0, 0, 0.3)");
-        //     $(this).find("img").css("filter", "brightness(100%)");
-        //     $("#item-use").css("background", "rgba(" + InventoryOption + ", 0.3)");
-        // },
+        stop: function() {
+            setTimeout(function() {
+                IsDragging = false;
+            }, 300);
+            $(this).css("background", "rgba(0, 0, 0, 0.3)");
+            $(this).find("img").css("filter", "brightness(100%)");
+            $("#item-use").css("background", "rgba(" + InventoryOption + ", 0.3)");
+        },
     });
 
     $(".item-slot").droppable({
@@ -978,7 +977,7 @@ function updateweights($fromSlot, $toSlot, $fromInv, $toInv, $toAmount) {
     }
 
     $("#player-inv-weight").html(
-        "" +
+        "⚖️: " +
         (parseInt(totalWeight) / 1000).toFixed(2) +
         " / " +
         (playerMaxWeight / 1000).toFixed(2)
@@ -991,7 +990,7 @@ function updateweights($fromSlot, $toSlot, $fromInv, $toInv, $toAmount) {
     ) {
         $("#other-inv-label").html(otherLabel);
         $("#other-inv-weight").html(
-            "" +
+            "⚖️: " +
             (parseInt(totalWeightOther) / 1000).toFixed(2) +
             " / " +
             (otherMaxWeight / 1000).toFixed(2)
@@ -2509,7 +2508,7 @@ var requiredItemOpen = false;
         }
 
         $("#player-inv-weight").html(
-            " " +
+            "⚖️: " +
             (totalWeight / 1000).toFixed(2) +
             " / " +
             (data.maxweight / 1000).toFixed(2)
@@ -2525,7 +2524,7 @@ var requiredItemOpen = false;
             } else {
                 $("#other-inv-label").html(data.other.label);
                 $("#other-inv-weight").html(
-                    " " +
+                    "⚖️: " +
                     (totalWeightOther / 1000).toFixed(2) +
                     " / " +
                     (data.other.maxweight / 1000).toFixed(2)
@@ -2536,7 +2535,7 @@ var requiredItemOpen = false;
         } else {
             $("#other-inv-label").html(Inventory.droplabel);
             $("#other-inv-weight").html(
-                " " +
+                "⚖️: " +
                 (totalWeightOther / 1000).toFixed(2) +
                 " / " +
                 (Inventory.dropmaxweight / 1000).toFixed(2)
@@ -2698,7 +2697,7 @@ var requiredItemOpen = false;
         });
 
         $("#player-inv-weight").html(
-            " " +
+            "⚖️: " +
             (totalWeight / 1000).toFixed(2) +
             " / " +
             (data.maxweight / 1000).toFixed(2)
