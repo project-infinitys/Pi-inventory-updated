@@ -1,4 +1,4 @@
-# PI-inventory
+# PI-inventory updated for latest qb by project infinity
 Redesign of qb-inventory
 No Hate We Are Not Against For Anyone Full Rights For [QBCore](https://github.com/qbcore-framework)
 # Change-log
@@ -18,11 +18,11 @@ And Also Most Important Rename Pi-inventory to qb-inventory else some Scripts Th
 # Support
 We Only Give Support For Html Thing
 For Support Join Our Discord :-
-https://discord.gg/Kd5B3KPnTv
+https://discord.gg/VxSnEaCTPW
 
 # Credits
 - For Whole Written Code Of Lua/html
 [qb-core](https://github.com/qbcore-framework)
 [qb-inventory](https://github.com/qbcore-framework/qb-inventory) 
-Project India Team
+
  
